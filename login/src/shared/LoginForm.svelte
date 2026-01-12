@@ -1,17 +1,22 @@
 <script>
   import { goto } from '$app/navigation';
+  import { supabase } from '$lib/supabase.js';
   import Button from '../shared/Button.svelte';
 
-  let username = "Kjell";
+  let email = "";
   let password = "";
-  const errors = { username: "", password: "" };
+  let error = "";
 
-  const submitHandler = () => {
-      console.log(`username: ${username}, password: ${password}`);
-      if (username == "Kjell" && password != "123") {
-          errors.password = "Incorrect password";
+  const submitHandler = async () => {
+      error = "";
+      const { data, error: authError } = await supabase.auth.signInWithPassword({
+          email,
+          password
+      });
+
+      if (authError) {
+          error = authError.message;
       } else {
-          errors.password = "";
           goto('/main');
       }
   };
@@ -20,18 +25,25 @@
 
 <form on:submit|preventDefault={submitHandler}>
   <div class="form-field">
-    <label for="username">Username:</label>
-    <input type="text" id="username" bind:value={username}>
-    <div class="error">{ errors.username }</div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" bind:value={email}>
   </div>
   <div class="form-field">
     <label for="password">Password:</label>
     <input type="password" id="password" bind:value={password}>
-    <div class="error">{ errors.password }</div>
   </div>
 
-  <div class="login-btn">
-    <Button type="secondary" flat={true}>Login</Button>
+  {#if error}
+    <div class="error">{error}</div>
+  {/if}
+
+  <div class="buttons">
+    <Button color="link" type="button" on:click={() => goto('/forgot-password')}>I forgot my password</Button>
+    <Button color="success" flat={true}>Login</Button>
+  </div>
+
+  <div class="signup-link">
+    Don't have an account? <a href="/signup">Sign up</a>
   </div>
 </form>
 
@@ -63,7 +75,13 @@ label {
     text-align: left;
 }
 
-.login-btn {
-    text-align: right;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
 }
 </style>

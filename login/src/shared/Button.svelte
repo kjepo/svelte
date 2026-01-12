@@ -1,10 +1,12 @@
 <script>
-  export let type = 'primary';
+  // default button
+  export let color = 'primary';
+  export let type = 'submit';
   export let flat = false;
   export let inverse = false;
 </script>
 
-<button class:flat={flat} class:inverse={inverse} class={type} on:click>
+<button type={type} class:flat={flat} class:inverse={inverse} class={color} on:click>
   <slot></slot>
 </button>
 
@@ -21,21 +23,80 @@ button {
     box-shadow: none;
 }
 .primary {
-    background: #d91b42;
+    background: #0d6efd;
     color: white;
 }
 .secondary {
-    background: #45c496;
+    background: #6c757d;
     color: white;
 }
+.success {
+    background: #198754;
+    color: white;
+}
+.danger {
+    background: #dc3545;
+    color: white;
+}
+.warning {
+    background: #ffc107;
+    color: #000;
+}
+.info {
+    background: #0dcaf0;
+    color: #000;
+}
+.light {
+    background: #f8f9fa;
+    color: #000;
+}
+.dark {
+    background: #212529;
+    color: white;
+}
+.link {
+    background: transparent;
+    color: #0d6efd;
+    box-shadow: none;
+    text-decoration: underline;
+    padding: 0;
+}
+.link:hover {
+    color: #0a58ca;
+}
 .primary.inverse {
-    color: #d91b42;
+    color: #0d6efd;
     background: white;
-    border: 2px solid #d91b42;
+    border: 2px solid #0d6efd;
 }
 .secondary.inverse {
-    color: #45c496;
+    color: #6c757d;
     background: white;
-    border: 2px solid #45c496;
+    border: 2px solid #6c757d;
+}
+.success.inverse {
+    color: #198754;
+    background: white;
+    border: 2px solid #198754;
+}
+.danger.inverse {
+    color: #dc3545;
+    background: white;
+    border: 2px solid #dc3545;
+}
+.warning.inverse {
+    color: #ffc107;
+    background: white;
+    border: 2px solid #ffc107;
+}
+.info.inverse {
+    color: #0dcaf0;
+    background: white;
+    border: 2px solid #0dcaf0;
+}
+.dark.inverse {
+    color: #212529;
+    background: white;
+    border: 2px solid #212529;
 }
 </style>
