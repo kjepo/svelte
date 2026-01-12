@@ -1,0 +1,270 @@
+<script>
+    import { onMount } from 'svelte';
+    import { goto } from '$app/navigation';
+    import { supabase } from '$lib/supabase.js';
+    import { Button } from '$lib/components/ui/button/index.js';
+    import { Input } from '$lib/components/ui/input/index.js';
+    import { Label } from '$lib/components/ui/label/index.js';
+    import * as Dialog from '$lib/components/ui/dialog/index.js';
+    import * as AlertDialog from '$lib/components/ui/alert-dialog/index.js';
+    import * as RadioGroup from '$lib/components/ui/radio-group/index.js';
+    import { Plus, LogOut, Trash2 } from '@lucide/svelte';
+
+    let user = $state(null);
+    let dialogOpen = $state(false);
+    let deleteDialogOpen = $state(false);
+    let projectToDelete = $state(null);
+    let projectName = $state('');
+    let selectedAlbum = $state('fine-art-square');
+    let projects = $state([]);
+    let saving = $state(false);
+    let error = $state('');
+
+    const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+    };
+
+    onMount(async () => {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) {
+            goto('/');
+        } else {
+            user = session.user;
+            await loadProjects();
+        }
+    });
+
+    const loadProjects = async () => {
+        const { data, error: loadError } = await supabase
+            .from('projects')
+            .select('*')
+            .order('created_at', { ascending: false });
+
+        if (loadError) {
+            console.error('Error loading projects:', loadError);
+        } else {
+            projects = data || [];
+        }
+    };
+
+    const logout = async () => {
+        await supabase.auth.signOut();
+        goto('/');
+    };
+
+    const createProject = async () => {
+        if (!projectName || !selectedAlbum) return;
+
+        saving = true;
+        error = '';
+
+        const { error: saveError } = await supabase
+            .from('projects')
+            .insert({
+                user_id: user.id,
+                name: projectName,
+                album_type: selectedAlbum
+            });
+
+        if (saveError) {
+            error = saveError.message;
+            saving = false;
+            return;
+        }
+
+        await loadProjects();
+        dialogOpen = false;
+        projectName = '';
+        selectedAlbum = 'fine-art-square';
+        saving = false;
+    };
+
+    const confirmDelete = (project) => {
+        projectToDelete = project;
+        deleteDialogOpen = true;
+    };
+
+    const deleteProject = async () => {
+        if (!projectToDelete) return;
+
+        const { error: deleteError } = await supabase
+            .from('projects')
+            .delete()
+            .eq('id', projectToDelete.id);
+
+        if (deleteError) {
+            console.error('Error deleting project:', deleteError);
+            return;
+        }
+
+        deleteDialogOpen = false;
+        projectToDelete = null;
+        await loadProjects();
+    };
+</script>
+
+<div class="min-h-screen p-8">
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-2xl font-bold">Welcome</h1>
+        <div class="flex gap-2">
+            <Button onclick={() => dialogOpen = true}><Plus class="size-4" />New project</Button>
+            <Button variant="outline" onclick={logout}><LogOut class="size-4" />Logout</Button>
+        </div>
+    </div>
+    {#if user}
+        <p class="text-muted-foreground mb-8">You are logged in as {user.email}</p>
+    {/if}
+
+    {#if projects.length > 0}
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+            {#each projects as project}
+                <div class="rounded-lg border bg-card p-4 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="font-semibold">{project.name}</h3>
+			    <p class="text-sm text-muted-foreground">{formatDate(project.created_at)}</p>
+                            <p class="text-sm text-muted-foreground">{project.album_type}</p>
+                        </div>
+                        <Button variant="ghost" size="icon-sm" onclick={() => confirmDelete(project)}>
+                            <Trash2 class="size-4 text-muted-foreground hover:text-destructive" />
+                        </Button>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    {:else}
+        <p class="text-muted-foreground">No projects yet. Click "New project" to create one.</p>
+    {/if}
+</div>
+
+<Dialog.Root bind:open={dialogOpen}>
+    <Dialog.Content class="max-w-lg max-h-[90vh] overflow-y-auto">
+        <Dialog.Header>
+            <Dialog.Title>New Project</Dialog.Title>
+            <Dialog.Description>Choose an album type and give your project a name.</Dialog.Description>
+        </Dialog.Header>
+
+        <div class="space-y-6 py-4">
+            {#if error}
+                <div class="rounded-md bg-destructive/15 p-3 text-sm text-destructive">
+                    {error}
+                </div>
+            {/if}
+
+            <div class="space-y-2">
+                <Label for="project-name">Project Name</Label>
+                <Input id="project-name" bind:value={projectName} placeholder="Enter project name" />
+            </div>
+
+            <RadioGroup.Root bind:value={selectedAlbum} class="space-y-4">
+                <div class="space-y-3">
+                    <div class="font-semibold">Fine Art Album</div>
+                    <p class="text-sm text-muted-foreground">Can design across the crease.</p>
+                    <div class="grid gap-2 pl-4">
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="fine-art-square" id="fine-art-square" />
+                            <Label for="fine-art-square" class="font-normal">6×6", 8×8", 10×10", 12×12"</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="fine-art-a4-portrait" id="fine-art-a4-portrait" />
+                            <Label for="fine-art-a4-portrait" class="font-normal">A4 Portrait</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="fine-art-a5-portrait" id="fine-art-a5-portrait" />
+                            <Label for="fine-art-a5-portrait" class="font-normal">A5 Portrait</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="fine-art-a4-landscape" id="fine-art-a4-landscape" />
+                            <Label for="fine-art-a4-landscape" class="font-normal">A4 Landscape</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="fine-art-a5-landscape" id="fine-art-a5-landscape" />
+                            <Label for="fine-art-a5-landscape" class="font-normal">A5 Landscape</Label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="font-semibold">Coffee Table Book</div>
+                    <p class="text-sm text-muted-foreground">Can design across the crease.</p>
+                    <div class="grid gap-2 pl-4">
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="coffee-table-a4-portrait" id="coffee-table-a4-portrait" />
+                            <Label for="coffee-table-a4-portrait" class="font-normal">A4 Portrait</Label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="font-semibold">Matted Album</div>
+                    <p class="text-sm text-muted-foreground">Can not design across the crease.</p>
+                    <div class="grid gap-2 pl-4">
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="matted-8x8" id="matted-8x8" />
+                            <Label for="matted-8x8" class="font-normal">8×8"</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="matted-10x10" id="matted-10x10" />
+                            <Label for="matted-10x10" class="font-normal">10×10"</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="matted-12x12" id="matted-12x12" />
+                            <Label for="matted-12x12" class="font-normal">12×12"</Label>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="matted-14x10" id="matted-14x10" />
+                            <Label for="matted-14x10" class="font-normal">14×10"</Label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-3">
+                    <div class="font-semibold">Every_ Album</div>
+                    <p class="text-sm text-muted-foreground">Can design across the crease.</p>
+                    <div class="grid gap-2 pl-4">
+                        <div class="flex items-center space-x-2">
+                            <RadioGroup.Item value="every-album" id="every-album" />
+                            <Label for="every-album" class="font-normal">8×8", 10×10"</Label>
+                        </div>
+                    </div>
+                    <p class="text-xs text-muted-foreground">Every_ Albums are limited to 8×8" or 10×10", 25 spreads and Heritage covers.</p>
+                </div>
+            </RadioGroup.Root>
+        </div>
+
+        <Dialog.Footer>
+            <Button variant="outline" onclick={() => dialogOpen = false} disabled={saving}>Cancel</Button>
+            <Button onclick={createProject} disabled={!projectName || !selectedAlbum || saving}>
+                {#if saving}
+                    Creating...
+                {:else}
+                    Create Project
+                {/if}
+            </Button>
+        </Dialog.Footer>
+    </Dialog.Content>
+</Dialog.Root>
+
+<AlertDialog.Root bind:open={deleteDialogOpen}>
+    <AlertDialog.Content>
+        <AlertDialog.Header>
+            <AlertDialog.Title>Delete project</AlertDialog.Title>
+            <AlertDialog.Description>
+                Are you sure you want to delete "{projectToDelete?.name}"? This action cannot be undone.
+            </AlertDialog.Description>
+        </AlertDialog.Header>
+        <AlertDialog.Footer>
+            <AlertDialog.Cancel>Cancel</AlertDialog.Cancel>
+            <AlertDialog.Action onclick={deleteProject} class="bg-destructive text-destructive-foreground hover:bg-destructive/90">
+                Delete
+            </AlertDialog.Action>
+        </AlertDialog.Footer>
+    </AlertDialog.Content>
+</AlertDialog.Root>

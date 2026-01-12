@@ -1,0 +1,487 @@
+2026-01-12T21:56:32.148572Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:32.149652Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:32.151902Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:32.151911Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:32.155837Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.157174Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:32.157496Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:32.157526Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:32.157543Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:32.157560Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:32.157585Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:32.157603Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:32.157625Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:32.157638Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:32.157649Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:32.157691Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:32.157711Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:32.157732Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:32.157750Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:32.157774Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:32.157801Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:32.157824Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:32.157842Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:32.157879Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:32.157908Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:32.157936Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:32.157948Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:32.157960Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:32.157971Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:32.157982Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:32.158023Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:32.158033Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:32.158043Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:32.158053Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:32.158071Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:32.158094Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:32.158104Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:32.158114Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:32.158127Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:32.158136Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:32.158145Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:32.158155Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:32.158169Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:32.158188Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:32.158214Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:32.158224Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:32.158242Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:32.158262Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:32.158272Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:32.158291Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:32.158310Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:32.158322Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:32.158344Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:32.158364Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:32.158390Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:32.158409Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:32.158439Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:32.158456Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:32.158481Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:32.158492Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:32.158504Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:32.158789Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.158797Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.158801Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.158804Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 40 file(s)
+2026-01-12T21:56:32.158977Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:32.158969Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:32.159051Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:32.159112Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:32.159142Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:32.159144Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:32.159175Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:32.159198Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:32.159210Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:32.159260Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:32.159347Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:32.159859Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:32.159884Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:32.159885Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:32.159932Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:32.159933Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:32.159935Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:32.159953Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:32.159967Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:32.159969Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:32.160108Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:32.160048Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:32.160094Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:32.160204Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:32.159951Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:32.160103Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:32.160378Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:32.160835Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:32.160837Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:32.160857Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:32.160911Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:32.160867Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:32.160948Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:32.160954Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:32.160912Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:32.161003Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:32.160861Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:32.160985Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:32.160878Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:32.161032Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:32.161153Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161164Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.161169Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.161511Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161521Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161525Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.161529Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-01-12T21:56:32.161547Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:32.161551Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161555Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.161559Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.161637Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161642Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.161819Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.162059Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.162065Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.162352Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:32.162424Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:32.162505Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:32.162537Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:32.162571Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:32.162607Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:32.162633Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:32.162664Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:32.162739Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:32.162804Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:32.162842Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:32.162879Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:32.162919Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:32.162951Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:32.162987Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:32.163035Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.163101Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.163179Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.163183Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:32.163397Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:32.163491Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:32.163602Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:32.163640Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:32.163675Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:32.163707Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:32.163735Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:32.163763Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:32.163835Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:32.163917Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:32.163952Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:32.163986Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:32.164024Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:32.164051Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:32.164085Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:32.164129Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:32.165227Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:33.034934Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:33.034971Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:33.034999Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:33.035005Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:33.805283Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:33.805318Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:33.805344Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:33.805348Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:34.159307Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:34.159342Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:34.159370Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:34.159374Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:34.159401Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.159687Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:34.159735Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.159761Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:34.159776Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:34.159790Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:34.159813Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:34.159830Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.159851Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:34.159863Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:34.159875Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:34.159917Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:34.159948Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.160022Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:34.160040Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.160062Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:34.160078Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.160098Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:34.160133Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.160187Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.160356Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.160434Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:34.160467Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:34.160502Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:34.160534Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:34.160564Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:34.160597Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:34.160629Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:34.160658Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:34.160688Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:34.160759Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.160822Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:34.160866Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:34.160896Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:34.160925Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:34.160954Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:34.161006Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:34.161024Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:34.161036Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:34.161078Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.161100Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:34.161111Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:34.161128Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.161148Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:34.161157Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:34.161177Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.161195Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:34.161205Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:34.161225Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.161243Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:34.161258Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.161291Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:34.161303Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:34.161319Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.161449Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:34.161512Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:34.161542Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:34.161627Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.161642Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.161655Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.161664Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 40 file(s)
+2026-01-12T21:56:34.161811Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:34.161813Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:34.161859Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:34.161877Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:34.161899Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:34.161922Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:34.161976Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:34.162043Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:34.161940Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:34.162107Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:34.162153Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:34.162015Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:34.162201Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:34.162213Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:34.162242Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:34.162257Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:34.162282Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:34.162296Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:34.162320Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:34.162335Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:34.162056Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:34.162372Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:34.162116Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:34.162409Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:34.162382Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:34.162438Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:34.162465Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:34.162326Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:34.162566Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:34.162051Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:34.162469Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:34.162469Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:34.162403Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:34.162574Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:34.162379Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:34.162156Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:34.162613Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:34.162631Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:34.162655Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:34.162669Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:34.162945Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.162963Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.162969Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.163441Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163453Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163458Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.163461Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-01-12T21:56:34.163490Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:34.163496Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163500Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.163503Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.163560Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163594Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163700Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.163952Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.163959Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.164271Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.164348Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.164434Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.164470Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.164506Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.164538Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.164564Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.164592Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.164667Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.164733Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.164768Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.164805Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.164867Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.164896Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.165014Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.165093Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.165409Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.165539Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.165554Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.166146Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.166222Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.166303Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.166337Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.166370Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.166400Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.166426Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.166455Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.166528Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.166592Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.166630Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.166683Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.166725Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.166756Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.166790Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.166834Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.167545Z  INFO get_globs: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.178025Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:34.178050Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:34.178073Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:34.178078Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:34.179086Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:34.179099Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:34.179119Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:34.179125Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:34.502162Z  INFO tailwindcss_oxide::scanner: Provided sources:
+2026-01-12T21:56:34.502192Z  INFO tailwindcss_oxide::scanner: Source: PublicSourceEntry { base: "/Users/kjell/src/svelte/login-db", pattern: "**/*", negated: false }
+2026-01-12T21:56:34.502219Z  INFO tailwindcss_oxide::scanner: Optimized sources:
+2026-01-12T21:56:34.502224Z  INFO tailwindcss_oxide::scanner: Source: Auto { base: "/Users/kjell/src/svelte/login-db" }
+2026-01-12T21:56:34.502265Z  INFO scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.502546Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:34.502597Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.502624Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:34.502640Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:34.502654Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:34.502677Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:34.502694Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.502716Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:34.502754Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:34.502842Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:34.503088Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:34.503163Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.503214Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:34.503240Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.503267Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:34.503286Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.503309Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:34.503327Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.503390Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.503487Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.503576Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:34.503613Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:34.503648Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:34.503679Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:34.503708Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:34.503812Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:34.503845Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:34.503883Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:34.503921Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:34.503946Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.503974Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:34.503986Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:34.503997Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:34.504007Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:34.504017Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:34.504027Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:34.504036Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:34.504049Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:34.504088Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.504110Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:34.504121Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:34.504139Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.504160Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:34.504170Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:34.504190Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.504209Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:34.504219Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:34.504239Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.504258Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:34.504333Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.504356Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:34.504391Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:34.504409Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.504428Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:34.504438Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:34.504447Z  INFO scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:34.504476Z  INFO scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.504481Z  INFO extract_candidates: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.504485Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.504489Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 40 file(s)
+2026-01-12T21:56:34.504603Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-legend.svelte"
+2026-01-12T21:56:34.504622Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.npmrc"
+2026-01-12T21:56:34.504625Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/svelte.config.js"
+2026-01-12T21:56:34.504673Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/index.ts"
+2026-01-12T21:56:34.504717Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.claude/settings.local.json"
+2026-01-12T21:56:34.504742Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-header.svelte"
+2026-01-12T21:56:34.504645Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/static/robots.txt"
+2026-01-12T21:56:34.504681Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/index.ts"
+2026-01-12T21:56:34.504629Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-title.svelte"
+2026-01-12T21:56:34.504696Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/README.md"
+2026-01-12T21:56:34.504825Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/components.json"
+2026-01-12T21:56:34.504627Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.d.ts"
+2026-01-12T21:56:34.504662Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-action.svelte"
+2026-01-12T21:56:34.504900Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/utils.ts"
+2026-01-12T21:56:34.504763Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-description.svelte"
+2026-01-12T21:56:34.504938Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/index.ts"
+2026-01-12T21:56:34.504796Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/assets/favicon.svg"
+2026-01-12T21:56:34.504743Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/index.ts"
+2026-01-12T21:56:34.504993Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-content.svelte"
+2026-01-12T21:56:34.505019Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label/label.svelte"
+2026-01-12T21:56:34.504943Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-label.svelte"
+2026-01-12T21:56:34.505070Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-fieldset.svelte"
+2026-01-12T21:56:34.505106Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-button.svelte"
+2026-01-12T21:56:34.505124Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/vite.config.ts"
+2026-01-12T21:56:34.504983Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/app.html"
+2026-01-12T21:56:34.504827Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field-errors.svelte"
+2026-01-12T21:56:34.505045Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/button.svelte"
+2026-01-12T21:56:34.504954Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card.svelte"
+2026-01-12T21:56:34.505106Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card/card-footer.svelte"
+2026-01-12T21:56:34.505263Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+layout.svelte"
+2026-01-12T21:56:34.505157Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/.vscode/settings.json"
+2026-01-12T21:56:34.504933Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/package.json"
+2026-01-12T21:56:34.505176Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/+page.svelte"
+2026-01-12T21:56:34.505324Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-element-field.svelte"
+2026-01-12T21:56:34.505239Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button/index.ts"
+2026-01-12T21:56:34.504862Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/tsconfig.json"
+2026-01-12T21:56:34.505206Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-description.svelte"
+2026-01-12T21:56:34.505285Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/form-field.svelte"
+2026-01-12T21:56:34.505290Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form/index.ts"
+2026-01-12T21:56:34.505266Z  INFO tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input/input.svelte"
+2026-01-12T21:56:34.505420Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.505424Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.505428Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.505860Z  INFO extract_candidates:parse_all_blobs:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.505888Z  INFO extract_candidates:parse_all_blobs: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.505913Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.505923Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading 1 file(s)
+2026-01-12T21:56:34.505941Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: Reading "/Users/kjell/src/svelte/login-db/src/routes/layout.css"
+2026-01-12T21:56:34.505946Z  INFO extract_candidates:read_all_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.505952Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.505957Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.506070Z  INFO extract_candidates:extract_css_variables:extract: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.506076Z  INFO extract_candidates:extract_css_variables: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.506222Z  INFO extract_candidates: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.506426Z  INFO get_files: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.506432Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.506719Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.506790Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.506867Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.506896Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.506926Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.506955Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.506979Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.507006Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.507072Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.507130Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.507162Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.507195Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.507232Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.507259Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.507329Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.507371Z  INFO get_files:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.507511Z  INFO get_files: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.507555Z  INFO get_globs: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.507559Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: enter
+2026-01-12T21:56:34.507916Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.claude"
+2026-01-12T21:56:34.507994Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/static"
+2026-01-12T21:56:34.508060Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/.vscode"
+2026-01-12T21:56:34.508107Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src"
+2026-01-12T21:56:34.508137Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib"
+2026-01-12T21:56:34.508165Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components"
+2026-01-12T21:56:34.508187Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui"
+2026-01-12T21:56:34.508211Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/form"
+2026-01-12T21:56:34.508293Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/card"
+2026-01-12T21:56:34.508372Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/input"
+2026-01-12T21:56:34.508461Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/label"
+2026-01-12T21:56:34.508665Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/components/ui/button"
+2026-01-12T21:56:34.508740Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/hooks"
+2026-01-12T21:56:34.508772Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/lib/assets"
+2026-01-12T21:56:34.508804Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: Discovering "/Users/kjell/src/svelte/login-db/src/routes"
+2026-01-12T21:56:34.508848Z  INFO get_globs:scan_sources: tailwindcss_oxide::scanner: exit
+2026-01-12T21:56:34.509533Z  INFO get_globs: tailwindcss_oxide::scanner: exit
