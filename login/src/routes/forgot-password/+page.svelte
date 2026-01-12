@@ -24,8 +24,8 @@
     };
 </script>
 
-<h1>Forgot Password</h1>
 <Card>
+    <h1>Forgot Password</h1>
     <form on:submit|preventDefault={handleSubmit}>
         <div class="form-field">
             <label for="email">Email:</label>

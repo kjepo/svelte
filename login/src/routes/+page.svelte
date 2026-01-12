@@ -4,8 +4,8 @@
     import LoginForm from '../shared/LoginForm.svelte';
 </script>
     
-<h1>Login</h1>
 <Card>
+  <h1>Login</h1>
   <LoginForm />
 </Card>
 	
